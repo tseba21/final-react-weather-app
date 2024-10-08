@@ -79,7 +79,11 @@ export default function Weather(props) {
             open-sourced on GitHub
           </a>{" "}
           and{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://elegant-beijinho-c81b94.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             hosted on Netlify
           </a>
         </footer>
