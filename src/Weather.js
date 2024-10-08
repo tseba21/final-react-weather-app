@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 
 export default function Weather(props) {
@@ -30,7 +30,7 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "";
+    const apiKey = "te41005c6ao302b3034af61b1f22f9a7";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
@@ -59,17 +59,22 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast
-          coordinates={weatherData.coordinates}
-          city={weatherData.city}
-        />
+
         <footer>
           This project was coded by{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/tseba21/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Tsebaot Melese
           </a>{" "}
           and is{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/tseba21/final-react-weather-app.git"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             open-sourced on GitHub
           </a>{" "}
           and{" "}
