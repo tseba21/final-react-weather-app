@@ -67,7 +67,11 @@ export default function Weather(props) {
         />
         <footer>
           This project was coded by{" "}
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/tseba21/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Tsebaot Melese
           </a>{" "}
           and is{" "}
