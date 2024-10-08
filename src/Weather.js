@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
+import "./styles.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -59,19 +61,18 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-
+        <WeatherForecast
+          coordinates={weatherData.coordinates}
+          city={weatherData.city}
+        />
         <footer>
           This project was coded by{" "}
-          <a
-            href="https://github.com/tseba21/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="" target="_blank" rel="noopener noreferrer">
             Tsebaot Melese
           </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/tseba21/final-react-weather-app.git"
+            href="https://github.com/tseba21/final-react-weather-app"
             target="_blank"
             rel="noopener noreferrer"
           >
